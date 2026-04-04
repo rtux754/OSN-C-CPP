@@ -14,7 +14,7 @@ Ini Adalah File Untuk Catatan Beberapa Hal Yang Akan Berguna Nantinya.
 `.cc` & `.c` Artinya Header File Dari C
 
 # Cara Membedakan String & Char
-string Di Himpit Oleh `"...."`
+string Di Himpit Oleh `"...."`\
 char Di Himpit Oleh `'....'`
 
 # Cara Menulis Variabel
