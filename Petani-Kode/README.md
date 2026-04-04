@@ -4,8 +4,7 @@ Ini adalah program belajar ku yang aku pelajari dari Website Petani Kode https:/
 
 Ini adalah file untuk catatan beberapa hal yang akan berguna nantinya.
 
-########################################
-########################################
+################################################################################
 
 
 # Penjelasan format library
