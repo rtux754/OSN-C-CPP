@@ -8,26 +8,28 @@ Ini adalah file untuk catatan beberapa hal yang akan berguna nantinya.
 ########################################
 
 
-# penjelasan format library
+# Penjelasan format library
 .h artinya header file dari C atau C++;
 .cpp artinya source code dari C++;
 .hpp artinya header file dari C++;
 .cc dan .c artinya header file dari C.
 
-# cara membedakan string dan char
+# Cara membedakan string dan char
 string di himpit oleh "...."
 char di himpit oleh '....'
 
-# cara menulis variabel
+# Cara menulis variabel
+```cpp
 string nama = "Petani Kode";
 cout << "Hello " << nama << endl;
-
-# cara mengatasi spasi pada fungsi scanf()
+```
+# Cara mengatasi spasi pada fungsi scanf()
+```cpp
 string name[20];
 printf(nama:);
 scanf("%[^\n]s", &name)
-
-# macam-macam tipe data
+```
+# Macam-macam tipe data
 |Nama Tipe Data | Ukuran dalam Memori | Rentang Nilai |
 | :-- | :-- | :--: |
 | char	         | 1byte	     |   -127 sampai 127 atau 0 sampai 255 |
@@ -49,71 +51,74 @@ scanf("%[^\n]s", &name)
 | boolean	          |  4bytes	       | true atau false |
 
 
-# string
+# String
 Khusus untuk tipe data string, kita menggunakan fungsi getline() untuk mengambil satu baris nilai yang diinputkan.
-
+```cpp
 string nama;
 getline(cin, nama);
-
-# mengubah nama tipe data
-
-- typedef tipe_data nama_baru;
+```
+# Mengubah nama tipe data
+```cpp
+// typedef tipe_data nama_baru;
 typedef int angka;
 int berubah menjadi angka
-
+```
 - cara menggunakannya
-
+```cpp
 angka umur;
-
-# menggunakan auto untuk tipe data
+```
+# Menggunakan auto untuk tipe data
 Kata kunci auto berfungsi untuk menentukan tipe data secara otomatis berdasarkan data yang tersimpan di dalam sebuah variabel. Tipe auto biasanya dipakai untuk menentukan tipe data secara dinamis.
-
+```cpp
 auto tinggi_badan;
-
+```
 jika di isi dengan 170 maka dia akan menjadi, jika 170.5 akan menjadi float, jika "175cm" akan menjadi string.
 bisa diisi dengan tipe data apapun.
 
-# cara membuat tipe data
-- int age = 18;
-- float tinggi = 155.5f; // gunakan f di akhir untuk memberitahu bahwa tipe datanya adalah float
+# Cara membuat tipe data
+```cpp
+ int age = 18;
+ float tinggi = 155.5f; // gunakan f di akhir untuk memberitahu bahwa tipe datanya adalah float
+ ```
 
-# fungsi
-fungsi typeid() untuk mendapatkan nama tipe data dari variabel.
-
-
-# operator bitwise
-- \>\>  right shift # menghasilkan nilai biner yang di geser ke kanan
-- <<  left shift # menghasilkan nilai biner yang di geser ke kiri
-- &   and - menghasilkan satu bila keduanya true
--  |   or - menghasilkan satu bila salah satunya ada yang true 
-- ^   xor - menghasilkan satu bila kedua angka tidak sama
-- ~   not/komplemen - menghasilkan nilai biner yang terbalik dari biner aslilnya
+# Operator bitwise
+```cpp
+ >>  //right shift  menghasilkan nilai biner yang di geser ke kanan
+ <<  //left shift  menghasilkan nilai biner yang di geser ke kiri
+ &   //and  menghasilkan satu bila keduanya true
+ |   //or  menghasilkan satu bila salah satunya ada yang true 
+ ^   //xor  menghasilkan satu bila kedua angka tidak sama
+ ~   //not/komplemen - menghasilkan nilai biner yang terbalik dari biner aslilnya
+ ```
 
 # operator logika
-- && and
-- || or
-- ! negasi
-
+```cpp
+ && // and
+ || // or
+ !  //negasi
+ ```
 
 # operator lain
-- & mengambil  alamat memori
-- \* membuat pointer
-- ?: membuat kondisi(if else versi singkat)
-- ++ menambah satu angka
-- -- mengurangi satu angka
+```cpp
+ &  //mengambil  alamat memori
+ *  //membuat pointer
+ ?: //membuat kondisi(if else versi singkat)
+ ++ //menambah satu angka
+ -- //mengurangi satu angka
+```
 
 # array
 
-ada dua cara untuk mengambil panjang array.
+`ada dua cara untuk mengambil panjang array.`
 
 - cara pertama:
 menggunakan sizeof()
 fungsi sizeof() sebenarnya akan mengambil ukuran memori dari array
 
 Misalkan saya punya array seperti ini:
-
+```cpp
 int nilai[2] = {1, 2};
-
+```
 Isi array-nya berupa integer, tipe data integer memiliki ukuran 4 byte dalam memori. Maka ukuran array tersebut adalah 8 byte.
 
 Lalu bagaimana cara mendapatkan banyaknya isi array?
@@ -123,7 +128,7 @@ Karena di bahasa C belum memiliki fungsi khusus untuk mengambil banyaknya isi ar
 Kita harus membaginya dengan panjang pointernya.
 
 Contoh:
-
+```cpp
 int array[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 /* ukuran array dalam byte */
@@ -131,17 +136,17 @@ int size = sizeof(array);
 
 /* banyaknya isi array `array` */
 int length = sizeof(array) / sizeof(*array);
-
+```
 - Cara kedua
 menggunakan Class Template
 
 Contoh:
-
+```cpp
 // membuat array dengan class
 array<string, 5> names = {"Ali", "Abi", "Ami", "Mia", "Nia"};
 // mengambil ukuran array
 cout << names.size();
-
-untuk menggunakannya kita harus import dulu #include <array>
+```
+untuk menggunakannya kita harus import dulu #include <\array\>
 
 # enum
