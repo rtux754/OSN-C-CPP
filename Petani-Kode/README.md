@@ -1,4 +1,4 @@
-# CPP
+# C++
 
 Ini adalah program belajar ku yang aku pelajari dari Website Petani Kode https://www.petanikode.com/tutorial/c++/
 
