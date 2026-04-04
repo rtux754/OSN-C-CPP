@@ -147,6 +147,8 @@ array<string, 5> names = {"Ali", "Abi", "Ami", "Mia", "Nia"};
 // mengambil ukuran array
 cout << names.size();
 ```
-untuk menggunakannya kita harus import dulu #include <array\>
-
+untuk menggunakannya kita harus import dulu:
+```cpp
+#include <array>
+```
 # Enum
