@@ -91,14 +91,14 @@ bisa diisi dengan tipe data apapun.
  ~   //not/komplemen - menghasilkan nilai biner yang terbalik dari biner aslilnya
  ```
 
-# operator logika
+# Operator logika
 ```cpp
  && // and
  || // or
  !  //negasi
  ```
 
-# operator lain
+# Operator lain
 ```cpp
  &  //mengambil  alamat memori
  *  //membuat pointer
@@ -107,7 +107,7 @@ bisa diisi dengan tipe data apapun.
  -- //mengurangi satu angka
 ```
 
-# array
+# Array
 
 `ada dua cara untuk mengambil panjang array.`
 
@@ -149,4 +149,4 @@ cout << names.size();
 ```
 untuk menggunakannya kita harus import dulu #include <\array\>
 
-# enum
+# Enum
