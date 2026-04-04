@@ -1,35 +1,35 @@
 # C++
 
-Ini adalah program belajar ku yang aku pelajari dari Website Petani Kode https://www.petanikode.com/tutorial/c++/
+Ini Adalah Program Belajar Ku Yang Aku Pelajari Dari Website Petani Kode https://www.petanikode.com/tutorial/c++/
 
-Ini adalah file untuk catatan beberapa hal yang akan berguna nantinya.
+Ini Adalah File Untuk Catatan Beberapa Hal Yang Akan Berguna Nantinya.
 
 ################################################################################
 
 
-# Penjelasan format library
-.h artinya header file dari C atau C++;
-.cpp artinya source code dari C++;
-.hpp artinya header file dari C++;
-.cc dan .c artinya header file dari C.
+# Penjelasan Format Library
+`.h` Artinya Header File Dari C Atau C++;
+`.cpp` Artinya Source Code Dari C++;
+`.hpp` Artinya Header File Dari C++;
+`.cc` & `.c` Artinya Header File Dari C.
 
-# Cara membedakan string dan char
-string di himpit oleh "...."
-char di himpit oleh '....'
+# Cara Membedakan String & Char
+string Di Himpit Oleh `"...."`
+char Di Himpit Oleh `'....'`
 
-# Cara menulis variabel
+# Cara Menulis Variabel
 ```cpp
 string nama = "Petani Kode";
 cout << "Hello " << nama << endl;
 ```
-# Cara mengatasi spasi pada fungsi scanf()
+- Cara Mengatasi Spasi Pada Fungsi `scanf()`
 ```cpp
 string name[20];
 printf(nama:);
 scanf("%[^\n]s", &name)
 ```
-# Macam-macam tipe data
-|Nama Tipe Data | Ukuran dalam Memori | Rentang Nilai |
+# Macam-macam Tipe Data
+|Nama Tipe Data | Ukuran Dalam Memori | Rentang Nilai |
 | :-- | :-- | :--: |
 | char	         | 1byte	     |   -127 sampai 127 atau 0 sampai 255 |
 | unsigned char  |  1byte	      |  0 sampai 255 |
@@ -51,102 +51,112 @@ scanf("%[^\n]s", &name)
 
 
 # String
-Khusus untuk tipe data string, kita menggunakan fungsi getline() untuk mengambil satu baris nilai yang diinputkan.
+Khusus Untuk Tipe Data `string`, Kita Menggunakan Fungsi `getline()` Untuk Mengambil Satu Baris Nilai Yang Diinputkan.
 ```cpp
 string nama;
 getline(cin, nama);
 ```
-# Mengubah nama tipe data
+# Mengubah Nama Tipe Data
 ```cpp
 // typedef tipe_data nama_baru;
 typedef int angka;
 int berubah menjadi angka
 ```
-- cara menggunakannya
+- Cara Menggunakannya
 ```cpp
 angka umur;
 ```
-# Menggunakan auto untuk tipe data
-Kata kunci auto berfungsi untuk menentukan tipe data secara otomatis berdasarkan data yang tersimpan di dalam sebuah variabel. Tipe auto biasanya dipakai untuk menentukan tipe data secara dinamis.
+# Menggunakan `auto` Untuk Tipe Data
+`auto` Berfungsi Untuk Menentukan Tipe Data Secara Otomatis Berdasarkan Data Yang Tersimpan Di Dalam Sebuah Variabel. Tipe `auto` Biasanya Dipakai Untuk Menentukan Tipe Data Secara Dinamis.
 ```cpp
 auto tinggi_badan;
 ```
-jika di isi dengan 170 maka dia akan menjadi, jika 170.5 akan menjadi float, jika "175cm" akan menjadi string.
-bisa diisi dengan tipe data apapun.
+Jika Di Isi Dengan `170` Maka Dia Akan Menjadi `int`, Jika `170.5` Akan Menjadi `float`, Jika `"175cm"` Akan Menjadi `string`.
+Bisa Diisi Dengan Tipe Data Apapun.
 
-# Cara membuat tipe data
+# Cara Membuat Tipe Data
 ```cpp
  int age = 18;
- float tinggi = 155.5f; // gunakan f di akhir untuk memberitahu bahwa tipe datanya adalah float
+ float tinggi = 155.5f;
  ```
+Gunakan `f` Di Akhir Untuk Memberitahu Bahwa Tipe Datanya Adalah `float`
 
-# Operator bitwise
-```cpp
- >>  //right shift  menghasilkan nilai biner yang di geser ke kanan
- <<  //left shift  menghasilkan nilai biner yang di geser ke kiri
- &   //and  menghasilkan satu bila keduanya true
- |   //or  menghasilkan satu bila salah satunya ada yang true 
- ^   //xor  menghasilkan satu bila kedua angka tidak sama
- ~   //not/komplemen - menghasilkan nilai biner yang terbalik dari biner aslilnya
- ```
+# Operator Bitwise
 
-# Operator logika
-```cpp
- && // and
- || // or
- !  //negasi
- ```
+| Lambang | Nama Operator | Fungsi Operator |
+| :-- | :-- | :--:|
+| >> | Right Shift | Menghasilkan Nilai Biner Yang Di Geser Ke Kanan|
+| << | Left Shift | Menghasilkan Nilai Biner Yang Di Geser Ke Kiri|
+| & | And | Menghasilkan Nilai Satu Bila Keduanya `true`|
+| \| | Or | Cukup Butuh Satu Nilai Yang Bernilai `true` Untuk Menghasilkan Nilai Satu|
+| ^ | XOR | Menghasilkan Satu Bila Kedua Angka Tidak Sama |
+| ~ | Not/Komplemen | Menghasilkan Nilai Biner Negatif |
 
-# Operator lain
-```cpp
- &  //mengambil  alamat memori
- *  //membuat pointer
- ?: //membuat kondisi(if else versi singkat)
- ++ //menambah satu angka
- -- //mengurangi satu angka
-```
+# Operator Logika
+| Lambang | Nama Operator | Fungsi Operator|
+|:--|:--|:--:|
+|&|And|Menghasilkan Nilai `true` Ketika Keduanya `true`|
+|\||Or|Tidak Perlu Kedua Nilai Bernilai `true` Untuk Mendapatkan Nilai `true`|
+|!|Not\Komplemen|Menghasilkan Nilai `true` Jika Data Bernilai `false`|
+
+# Operator Aritmatika
+| Lambang|Fungsi|
+|:--|:--:|
+|+| Tambah
+|-|Kurang|
+|\ | Bagi|
+|*|Kali|
+|%|Sisa Bagi|
+| ++ | Menambahkan Satu Angka|
+| -- |Mengurangi Satu Angka|
+
+# Operator Lain
+|Lambang | Fungsi|
+|:--|:--:|
+| &[data]  | Mengambil Alamat Tipe Data|
+| *[data]  | Membuat Pointer|
+| ?: | Ternary(Versi Mini If-Else)|
+
 
 # Array
 
-`ada dua cara untuk mengambil panjang array.`
+`Ada Dua Cara Untuk Mengambil Panjang Array.`
 
-- cara pertama:
-menggunakan sizeof()
-fungsi sizeof() sebenarnya akan mengambil ukuran memori dari array
+- Cara Pertama:
+Menggunakan `sizeof()`
+fungsi `sizeof()` Sebenarnya Akan Mengambil Ukuran Memori Dari Array
 
-Misalkan saya punya array seperti ini:
+Misalkan Saya Punya Array Seperti Ini:
 ```cpp
 int nilai[2] = {1, 2};
 ```
-Isi array-nya berupa integer, tipe data integer memiliki ukuran 4 byte dalam memori. Maka ukuran array tersebut adalah 8 byte.
+Isi Array-nya Berupa `int`, Tipe Data `int` Memiliki Ukuran `4 byte` Dalam Memori. Maka Ukuran Array Tersebut Adalah `8 byte`.
 
-Lalu bagaimana cara mendapatkan banyaknya isi array?
+Lalu Bagaimana Cara Mendapatkan bBanyaknya Isi Array?
 
-Karena di bahasa C belum memiliki fungsi khusus untuk mengambil banyaknya isi array.
-
-Kita harus membaginya dengan panjang pointernya.
+Karena Di Bahasa C Belum Memiliki Fungsi Khusus Untuk Mengambil Banyaknya Isi Array. Kita Harus Membaginya Dengan Panjang Pointernya.
 
 Contoh:
 ```cpp
 int array[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-/* ukuran array dalam byte */
+/* Ukuran array Dalam byte */
 int size = sizeof(array);
 
-/* banyaknya isi array `array` */
+/* Banyaknya Isi array `array` */
 int length = sizeof(array) / sizeof(*array);
 ```
-- Cara kedua
-menggunakan Class Template
+- Cara Kedua
+Menggunakan Class Template
 
 Contoh:
 ```cpp
-// membuat array dengan class
+// Membuat array Dengan class
 array<string, 5> names = {"Ali", "Abi", "Ami", "Mia", "Nia"};
-// mengambil ukuran array
+// Mengambil Ukuran array
 cout << names.size();
 ```
-untuk menggunakannya kita harus import dulu:
+Untuk Menggunakannya Kita Harus Import Dulu:
 ```cpp
 #include <array>
 ```
