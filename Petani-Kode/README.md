@@ -11,7 +11,7 @@ Ini Adalah File Untuk Catatan Beberapa Hal Yang Akan Berguna Nantinya.
 `.h` Artinya Header File Dari C Atau C++\
 `.cpp` Artinya Source Code Dari C++\
 `.hpp` Artinya Header File Dari C++\
-`.cc` & `.c` Artinya Header File Dari C\
+`.cc` & `.c` Artinya Header File Dari C
 
 # Cara Membedakan String & Char
 string Di Himpit Oleh `"...."`
