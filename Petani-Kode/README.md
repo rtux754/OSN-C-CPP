@@ -82,7 +82,7 @@ fungsi typeid() untuk mendapatkan nama tipe data dari variabel.
 
 
 # operator bitwise
-- >>  right shift # menghasilkan nilai biner yang di geser ke kanan
+- \>\>  right shift # menghasilkan nilai biner yang di geser ke kanan
 - <<  left shift # menghasilkan nilai biner yang di geser ke kiri
 - &   and - menghasilkan satu bila keduanya true
 -  |   or - menghasilkan satu bila salah satunya ada yang true 
@@ -97,7 +97,7 @@ fungsi typeid() untuk mendapatkan nama tipe data dari variabel.
 
 # operator lain
 - & mengambil  alamat memori
-- * membuat pointer
+- \* membuat pointer
 - ?: membuat kondisi(if else versi singkat)
 - ++ menambah satu angka
 - -- mengurangi satu angka
