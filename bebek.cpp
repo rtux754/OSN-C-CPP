@@ -7,6 +7,7 @@ void fungsi(int *arr, int size);
 void fungsi(int *arr, int size)
 {
     int temp;
+    // bubble sort
     for (int i = 0; i < size - 1; i++)
     {
         for (int j = 0; j < size - i - 1; j++)
@@ -20,7 +21,7 @@ void fungsi(int *arr, int size)
         }
     }
 }
-
+                                                                               
 int main()
 {
     int N[5] = {12, 13, 14, 16, 12}; // jumlah ekor bebek
